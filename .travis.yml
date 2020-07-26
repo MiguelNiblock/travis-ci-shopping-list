@@ -1,2 +1,10 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: Xwc+hiQ7BFvcp5wf/hJCq5OT6mY0qMCRLhH1J00tZX7Kk+hRfQH+bbb2Mszeoq0cEs++Q3D1TOjOSQodQ7mEWPyD5aVbogkqJazKXiISBI/Q/t9kiJslSmxoPdwZWfwYSkPU9BffTbgxBpoPnqVmV0mY0KJaqumQYPTyXQuPUvVpa0QcDWBLaBJeojTyIC0mnN/yYCNtbBA5+IUr7hTWM9jUnvWPZH6P5dHMi+Ya5oBNIG1qxkQDWdxy+SvgAsWebMuWOtx2mXhax4nco+8YQJri2TEpvVRo2fI941WqxHtcj/fp4fykb4lWCkjNYiUbKDYgRExB0zkn6/ezOIBQYwF2qn6R09S/e3ThklOnDHcxtzfYCXZ20q4V2K08lPHK4yXrKdCDBP8RXXicvFSuchNCO6jidiFeL/X+7ct2FJ9kdNHa5iXQZSIA0hW8hxELWoSAkuAbPCrwJYfcCyIjtO8yr6IwoeI9TaoI78DelXu3Wm/uzqvTbGopna9Ptxko2xmnwnnICrENbj5DBOLygjPTzJaX8WNXo2Bs2e3SyP+fbPs8OqUW39guVaSvpIDCQvkU4w/SCnjqbYji5QfAhDLw/0I3EOCzXtXrY0Ul9GsfMyHQrZAJn3UQY8Aq8uHkgjaEzrkvF/S5GTDJbcfD2rfE0wdCKdzsSyTyErRO3cw=
+  app: miguel-node-shopping-list
+  on:
+    repo: MiguelNiblock/travis-ci-shopping-list
+  skip_cleanup: 'true'
